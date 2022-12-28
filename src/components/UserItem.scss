@@ -1,0 +1,137 @@
+.useritem{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 90vw;
+    overflow-x: scroll;
+    align-items: center;
+    padding-bottom: 40px;
+    background: #fff;
+
+
+    img{
+        height: 150px;
+        width: 150px;
+        border-radius: 5px;
+        border: 3px solid rgba(12, 162, 167, 0.644);
+    }
+
+    .hireable{
+        background: rgb(89, 226, 76);
+        padding: 10px 10px;
+        font-size: 20px;
+        color: #000;
+        border-radius: 25px;
+    }
+
+    .nonhireable{
+        padding: 10px 10px;
+        font-size: 20px;
+        color: #000;
+        border-radius: 25px;
+        background: rgb(207, 71, 62);
+    }
+
+    .visit{
+        margin: 5px 0;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 10px;
+        background: #000;
+        color: #fff;
+        border: none;
+        font-size: 30px;
+        transform: all 0.3s ease;
+
+        &:active{
+            scale: 0.9;
+        }
+    }
+
+
+    .numbers{
+        margin-top: 30px;
+        display: flex;
+        gap: 50px;
+
+        .followers{
+            font-size: 26px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            p{
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .repos{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+        .repo{
+            background-color: rgb(117, 117, 117);
+            padding: 15px 15px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 24px 0px rgba(66, 68, 90, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .repoTitle{
+                font-size: 30px;
+                text-decoration: none;
+                color: #fff;
+            }
+
+            p{
+                font-size: 24px;
+                flex-wrap: wrap;
+            }
+
+
+            .repoNumbers{
+                display: flex;
+                font-size: 30px;
+                text-align: center;
+                justify-content: space-around;
+                width: 100%;
+
+
+
+                p{
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+                }
+            }
+        }
+
+    }
+
+
+    .useritem.dark{
+        background: #000;
+        color: #fff;
+
+
+        .repos{
+
+            .repo{
+
+                
+            .repoTitle{
+                color: #000;
+            }
+            
+        }
+        
+        }
+}

@@ -1,0 +1,17 @@
+.footer{
+    background: rgb(54, 54, 54);
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    font-size: 22px;
+    text-align: center;
+}
+
+
+.footer.dark{
+    background: rgb(248, 248, 248);
+    color: #000;
+}

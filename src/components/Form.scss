@@ -1,0 +1,109 @@
+.maincontent{
+
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 90vw;
+    overflow-x: scroll;
+
+    .form{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 100px;
+
+        label{
+            font-size: 26px;
+        }
+
+        input{
+            margin-left: 5px;
+            padding-left: 10px;
+            font-size: 22px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            background: rgb(219, 219, 219);
+        }
+
+        button{
+            margin-left: 10px;
+            border: none;
+            border-radius: 10px;
+            padding: 0 10px;
+            font-size: 22px;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:active{
+                scale: 0.8;
+            }
+        }
+    }
+
+    .searchresult{
+        margin-top: 90px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        width: 100%;
+        align-content: center;
+        justify-items: center;
+        grid-auto-flow: dense;
+        row-gap: 50px;
+        padding-bottom: 30px;
+    }
+
+
+}
+
+
+.maincontent.dark{
+
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background: #000;
+    color: #fff;
+    height: 90vh;
+
+    .form{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 100px;
+
+        label{
+            font-size: 26px;
+        }
+
+        input{
+            margin-left: 5px;
+            padding-left: 10px;
+            font-size: 22px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            background: rgb(219, 219, 219);
+        }
+
+        button{
+            margin-left: 10px;
+            border: none;
+            border-radius: 10px;
+            padding: 0 10px;
+            font-size: 22px;
+            background: #fff;
+            color: #000;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:active{
+                scale: 0.8;
+            }
+        }
+    }
+
+
+}
