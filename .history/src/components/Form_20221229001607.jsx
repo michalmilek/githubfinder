@@ -7,6 +7,8 @@ import axios from 'axios'
 import UserList from './UserList'
 
 
+const githubToken = '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'
+
 const Form = () => {
 const [input, setInput] = useState('')
 const [data, setData] = useState([])
@@ -21,10 +23,10 @@ const getData = async () => {
       `https://api.github.com/search/users?q=${input}`,
       {
         headers: {
-          Authorization: `Bearer ${process.env.REACT_APP_KEY}`,
-        },
+          Authorization: `Bearer ${githubToken}`
+        }
       }
-    );
+      );
 
       setData(response?.data?.items)
     } catch(e) {
