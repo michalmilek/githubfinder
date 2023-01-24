@@ -1,5 +1,5 @@
 <h1 align="center">Github Finder</h1>
-
+<p align="center">Simple project with fetching users data from github api and functionality of changing theme and language</p>
 
 
 <h2 align="center">Screenshots</h2>
